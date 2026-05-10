@@ -528,7 +528,7 @@ claujson::patch(a, d);               // a에 패치 적용 → b와 동일해짐
 ```cpp
 // 메모리 해제 (Array/Object 재귀 삭제)
 claujson::clean(value);
-
+/*
 // 문자열 유효성 검사
 bool ok = claujson::is_valid_string_in_json("hello\\nworld");
 
@@ -538,7 +538,7 @@ auto [ok, converted] = claujson::convert_to_string_in_json("hello\\nworld");
 // 숫자 파싱
 _Value num;
 claujson::convert_number("3.14", num);
-
+*/
 // 로그 설정
 claujson::log.console();
 claujson::log.info();
